@@ -31,14 +31,13 @@ export const stats = [
   { icon: "code", value: "1+", label: "Projects Completed" },
   { icon: "briefcase", value: "0+", label: "Experience" },
   { icon: "cap", value: "8.6", label: "CGPA" },
-  { icon: "trophy", value: "Problem Solver", label: "LeetCode" },
 ];
 
 export const aboutPoints = [
-  "Full Stack Development Enthusiast",
-  "Strong problem solving skills",
-  "Passionate about AI & ML",
-  "Always learning new technologies",
+  { title: "Full Stack", subtitle: "Development Enthusiast", icon: "code" },
+  { title: "Strong", subtitle: "Problem Solving Skills", icon: "puzzle" },
+  { title: "Passionate", subtitle: "About AI & ML", icon: "brain" },
+  { title: "Always Learning", subtitle: "New Technologies", icon: "rocket" },
 ];
 
 export const aboutText =

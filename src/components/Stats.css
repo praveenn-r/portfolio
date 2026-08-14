@@ -10,7 +10,7 @@
   box-shadow: 0 20px 44px -20px rgba(20, 21, 26, 0.16);
   padding: 40px 48px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 24px;
 }
 
@@ -60,11 +60,6 @@
   color: var(--color-purple);
 }
 
-.stats__item:nth-child(4) .stats__value {
-  color: var(--color-purple);
-  font-size: 1.15rem;
-}
-
 .stats__label {
   display: block;
   font-size: 0.88rem;
@@ -79,11 +74,6 @@
 
   .stats__card {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .stats__item:nth-child(3) {
-    padding-left: 0;
-    border-left: none;
   }
 }
 

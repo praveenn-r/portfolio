@@ -1,4 +1,4 @@
-import { FiCode, FiBriefcase, FiAward } from "react-icons/fi";
+import { FiCode, FiBriefcase } from "react-icons/fi";
 import { PiGraduationCapBold } from "react-icons/pi";
 import { stats } from "../data/portfolioData";
 import "./Stats.css";
@@ -7,7 +7,6 @@ const icons = {
   code: <FiCode />,
   briefcase: <FiBriefcase />,
   cap: <PiGraduationCapBold />,
-  trophy: <FiAward />,
 };
 
 function Stats() {
