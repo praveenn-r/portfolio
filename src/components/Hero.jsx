@@ -43,6 +43,8 @@ function Hero() {
 
         <div className="hero__visual">
           <div className="hero__photo-wrap">
+            <span className="hero__deco hero__deco--circle" aria-hidden="true" />
+            <span className="hero__deco hero__deco--dots" aria-hidden="true" />
             <img
               src={profilePhoto}
               alt={profile.name}

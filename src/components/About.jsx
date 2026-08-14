@@ -36,19 +36,28 @@ function About() {
               <span className="about__contact-icon">
                 <FiMail />
               </span>
-              {profile.email}
+              <div>
+                <strong>{profile.email}</strong>
+                <span className="about__contact-sub">Email</span>
+              </div>
             </li>
             <li>
               <span className="about__contact-icon">
                 <FiPhone />
               </span>
-              {profile.phone}
+              <div>
+                <strong>{profile.phone}</strong>
+                <span className="about__contact-sub">Phone</span>
+              </div>
             </li>
             <li>
               <span className="about__contact-icon">
                 <FiMapPin />
               </span>
-              {profile.location}
+              <div>
+                <strong>{profile.location}</strong>
+                <span className="about__contact-sub">Location</span>
+              </div>
             </li>
           </ul>
 
