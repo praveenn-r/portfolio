@@ -1,3 +1,6 @@
+import interviewMateImage from "../assets/image copy 2.png";
+import multipleDiseaseImage from "../assets/image.png";
+
 export const profile = {
   name: "Praveen R Tippimani",
   firstName: "Praveen",
@@ -60,6 +63,7 @@ export const projects = [
     liveUrl: "#",
     githubUrl: "#",
     theme: "dark",
+    image: interviewMateImage,
   },
   {
     title: "Multiple Disease Prediction System",
@@ -69,5 +73,6 @@ export const projects = [
     liveUrl: "#",
     githubUrl: "#",
     theme: "light",
+    image: multipleDiseaseImage,
   },
 ];

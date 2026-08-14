@@ -20,7 +20,15 @@ function Projects() {
           {projects.map((project) => (
             <article className="project-card" key={project.title}>
               <div className={`project-card__preview project-card__preview--${project.theme}`}>
-                <span>{project.title}</span>
+                {project.image ? (
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="project-card__image"
+                  />
+                ) : (
+                  <span>{project.title}</span>
+                )}
               </div>
               <div className="project-card__body">
                 <h3>{project.title}</h3>
