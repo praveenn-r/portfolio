@@ -1,5 +1,5 @@
 .stats {
-  margin-top: -44px;
+  margin-top: -72px;
   position: relative;
   z-index: 2;
 }
@@ -73,6 +73,10 @@
 }
 
 @media (max-width: 900px) {
+  .stats {
+    margin-top: -52px;
+  }
+
   .stats__card {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -84,6 +88,10 @@
 }
 
 @media (max-width: 520px) {
+  .stats {
+    margin-top: -36px;
+  }
+
   .stats__card {
     grid-template-columns: 1fr;
     padding: 28px;
