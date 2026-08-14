@@ -1,7 +1,7 @@
 import { FiArrowRight, FiSend } from "react-icons/fi";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { profile } from "../data/portfolioData";
-import profilePhoto from "../assets/profile-photo.jpg";
+import profilePhoto from "../assets/profile-photo.png";
 import "./Hero.css";
 
 function Hero() {
