@@ -1,5 +1,5 @@
-import interviewMateImage from "../assets/image copy 2.png";
-import multipleDiseaseImage from "../assets/image.png";
+import interviewMateImage from "../assets/image.png";
+import multipleDiseaseImage from "../assets/image copy 2.png";
 
 export const profile = {
   name: "Praveen R Tippimani",
@@ -13,7 +13,7 @@ export const profile = {
   location: "Bengaluru, Karnataka, India",
   linkedin: "https://linkedin.com/in/your-profile",
   github: "https://github.com/your-profile",
-  resumeUrl: "/Resume-.pdf",
+  resumeUrl: "#",
 };
 
 export const navLinks = [
@@ -42,6 +42,78 @@ export const aboutPoints = [
 
 export const aboutText =
   "I'm a Computer Science and Engineering student specializing in AI & ML. I enjoy building web applications and exploring new technologies to solve real-world problems.";
+
+export const experience = {
+  role: "Python Full Stack Trainee",
+  company: "Dhee Coding Lab.",
+  location: "Bangalore",
+  period: "2026 - Present",
+  timeline: [
+    {
+      icon: "cap",
+      color: "purple",
+      parts: [
+        { text: "Currently upskilling in " },
+        { text: "Python Full Stack", accent: true },
+        { text: " Development." },
+      ],
+    },
+    {
+      icon: "code",
+      color: "pink",
+      parts: [
+        { text: "Working on " },
+        { text: "full-stack", accent: true },
+        { text: " development projects to enhance my technical skills." },
+      ],
+    },
+    {
+      icon: "layout",
+      color: "orange",
+      parts: [
+        { text: "Built simple web applications using " },
+        { text: "Python", accent: true },
+        { text: ", " },
+        { text: "HTML", accent: true },
+        { text: ", " },
+        { text: "CSS", accent: true },
+        { text: ", " },
+        { text: "JavaScript", accent: true },
+        { text: ", and " },
+        { text: "SQL", accent: true },
+        { text: "." },
+      ],
+    },
+    {
+      icon: "puzzle",
+      color: "blue",
+      parts: [
+        { text: "Improved " },
+        { text: "problem-solving", accent: true },
+        { text: " and " },
+        { text: "debugging", accent: true },
+        { text: " skills by working on real-world coding tasks." },
+      ],
+    },
+    {
+      icon: "star",
+      color: "purple",
+      parts: [
+        { text: "Skills learned: " },
+        { text: "Python", accent: true },
+        { text: ", " },
+        { text: "HTML", accent: true },
+        { text: ", " },
+        { text: "CSS", accent: true },
+        { text: ", " },
+        { text: "JavaScript", accent: true },
+        { text: ", " },
+        { text: "SQL", accent: true },
+        { text: "." },
+      ],
+    },
+  ],
+};
 
 export const techStack = [
   { name: "HTML5", icon: "html5" },

@@ -1,5 +1,6 @@
 import { FiUser, FiMail, FiPhoneCall, FiMapPin } from "react-icons/fi";
 import { FaWhatsapp, FaLinkedinIn, FaGithub, FaXTwitter, FaInstagram } from "react-icons/fa6";
+import { profile } from "../data/portfolioData";
 import "./CTA.css";
 
 // Update these paths to match wherever you keep your /assets folder
@@ -148,7 +149,7 @@ function Contact() {
             <span>Let's Connect on</span>
             <div className="connect__socials">
               <a
-                href="https://linkedin.com"
+                href={profile.linkedin}
                 target="_blank"
                 rel="noreferrer"
                 className="connect__social connect__social--linkedin"
@@ -157,7 +158,7 @@ function Contact() {
                 <FaLinkedinIn />
               </a>
               <a
-                href="https://github.com"
+                href={profile.github}
                 target="_blank"
                 rel="noreferrer"
                 className="connect__social connect__social--github"
