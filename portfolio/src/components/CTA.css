@@ -1,7 +1,7 @@
 .cta {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, var(--color-hero-bg-start), var(--color-hero-bg-end));
+  background: linear-gradient(120deg, #ffb37a, #c9a8ff);
   padding: 64px 0;
 }
 

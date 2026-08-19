@@ -1,7 +1,6 @@
 .tech {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, var(--color-hero-bg-start), var(--color-hero-bg-end));
 }
 
 /* Decorative elements */

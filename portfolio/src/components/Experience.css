@@ -1,8 +1,7 @@
 .experience {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, var(--color-hero-bg-start), var(--color-hero-bg-end));
-  padding: 68px 0;
+  background: linear-gradient(120deg, #f3edff 0%, var(--color-bg-soft) 50%, #fff6ef 100%);
 }
 
 .experience__section-deco {
@@ -24,9 +23,9 @@
   background: #fff;
   border-radius: var(--radius-lg);
   box-shadow: 0 24px 50px -30px rgba(20, 21, 26, 0.2);
-  padding: 38px 48px;
+  padding: 56px;
   overflow: hidden;
-  height: 540px;
+  height: 560px;
 }
 
 .experience__deco--dots {

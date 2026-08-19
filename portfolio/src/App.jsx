@@ -5,7 +5,6 @@ import About from "./components/About";
 import TechStack from "./components/TechStack";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
-import Certifications from "./components/Certifications";
 import CTA from "./components/CTA";
 
 function App() {
@@ -19,7 +18,6 @@ function App() {
         <TechStack />
         <Experience />
         <Projects />
-        <Certifications />
         <CTA />
       </main>
     </>

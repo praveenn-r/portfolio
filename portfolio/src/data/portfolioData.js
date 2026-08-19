@@ -1,6 +1,3 @@
-import interviewMateImage from "../assets/image.webp";
-import multipleDiseaseImage from "../assets/image copy.webp";
-
 export const profile = {
   name: "Praveen R Tippimani",
   firstName: "Praveen",
@@ -20,8 +17,8 @@ export const navLinks = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
   { label: "Skills", href: "#skills" },
-  { label: "Experience", href: "#experience" },
   { label: "Projects", href: "#projects" },
+  { label: "Experience", href: "#experience" },
   { label: "Education", href: "#education" },
   { label: "Certifications", href: "#certifications" },
   { label: "Contact", href: "#contact" },
@@ -116,41 +113,6 @@ export const experience = {
   ],
 };
 
-export const certifications = [
-  {
-    title: "Python Full Stack Development",
-    provider: "Dhee Coding Lab",
-    date: "June 2024",
-    credentialId: "DCL/FS/2024/0897",
-    accent: "#6c4cff",
-    icon: "dhee",
-  },
-  {
-    title: "MySQL",
-    provider: "Coursera",
-    date: "April 2024",
-    credentialId: "8X9J-LK72-NH3B",
-    accent: "#f02b8c",
-    icon: "mysql",
-  },
-  {
-    title: "Python Programming",
-    provider: "Simplilearn",
-    date: "March 2024",
-    credentialId: "4521897",
-    accent: "#ff9d00",
-    icon: "python",
-  },
-  {
-    title: "AWS Cloud Foundations",
-    provider: "AWS Academy",
-    date: "May 2024",
-    credentialId: "AWSAC-12984",
-    accent: "#3478ff",
-    icon: "aws",
-  },
-];
-
 export const techStack = [
   { name: "HTML5", icon: "html5" },
   { name: "CSS3", icon: "css3" },
@@ -171,7 +133,6 @@ export const projects = [
     liveUrl: "#",
     githubUrl: "#",
     theme: "dark",
-    image: interviewMateImage,
   },
   {
     title: "Multiple Disease Prediction System",
@@ -181,6 +142,5 @@ export const projects = [
     liveUrl: "#",
     githubUrl: "#",
     theme: "light",
-    image: multipleDiseaseImage,
   },
 ];

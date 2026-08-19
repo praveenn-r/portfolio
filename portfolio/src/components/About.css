@@ -1,7 +1,7 @@
 .about {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, var(--color-hero-bg-start), var(--color-hero-bg-end));
+  background: linear-gradient(120deg, #fff3ea 0%, #faf6fb 45%, #efe7ff 100%);
 }
 
 .about__inner {
