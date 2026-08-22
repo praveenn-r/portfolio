@@ -1,8 +1,11 @@
 .projects {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, var(--color-hero-bg-start), var(--color-hero-bg-end));
-  padding: 68px 0;
+  background: linear-gradient(120deg, #faf6fb 0%, #fff6ef 55%, #f3edff 100%);
+}
+
+[data-theme="dark"] .projects {
+  background: linear-gradient(120deg, #11162b 0%, #0d1124 55%, #150f2e 100%);
 }
 
 .projects__deco {
@@ -36,7 +39,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 28px;
+  margin-bottom: 36px;
   flex-wrap: wrap;
   gap: 12px;
 }
@@ -64,12 +67,12 @@
 }
 
 .project-card {
-  background: #fff;
+  background: var(--surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   overflow: hidden;
   transition: transform 0.18s ease, box-shadow 0.18s ease;
-  height: 540px;
+  height: 550px;
   display: flex;
   flex-direction: column;
 }
@@ -80,7 +83,7 @@
 }
 
 .project-card__preview {
-  height: 280px;
+  height: 300px;
   flex-shrink: 0;
   display: flex;
   align-items: center;

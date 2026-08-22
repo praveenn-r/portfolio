@@ -2,9 +2,9 @@
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(255, 241, 230, 0.85);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(236, 236, 239, 0.8);
+  background: var(--navbar-bg);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--color-border);
 }
 
 .navbar__inner {
@@ -70,7 +70,7 @@
     top: 84px;
     left: 0;
     right: 0;
-    background: #fff;
+    background: var(--surface);
     flex-direction: column;
     align-items: flex-start;
     padding: 20px 24px;

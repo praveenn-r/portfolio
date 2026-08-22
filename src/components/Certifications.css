@@ -1,8 +1,12 @@
 .certifications {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, var(--color-hero-bg-start), var(--color-hero-bg-end));
+  background: linear-gradient(120deg, #f7f5fb 0%, #faf9fb 50%, #f3edff 100%);
   padding-bottom: 96px;
+}
+
+[data-theme="dark"] .certifications {
+  background: linear-gradient(120deg, #0d1124 0%, #070a17 50%, #150f2e 100%);
 }
 
 /* Decorative elements */
@@ -158,14 +162,14 @@
   height: 14px;
   border-radius: 50%;
   border: 2px solid var(--connector-accent, var(--color-orange));
-  background: #fff;
+  background: var(--surface);
 }
 
 /* Card */
 
 .cert-card {
   position: relative;
-  width: 240px;
+  width: 268px;
   flex-shrink: 0;
   padding: 8px;
   border-radius: var(--radius-lg);
@@ -197,18 +201,53 @@
   transform: scale(1);
 }
 
+/* Stacked "ticket" paper layers peeking out behind the main card */
+
+.cert-card__stack {
+  position: absolute;
+  top: 14px;
+  left: 50%;
+  width: 88%;
+  height: 92%;
+  background: var(--surface);
+  border: 1px solid var(--color-border);
+  border-radius: calc(var(--radius-lg) - 6px);
+  z-index: -1;
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.cert-card__stack--1 {
+  transform: translateX(-50%) rotate(-3deg);
+  opacity: 0.7;
+}
+
+.cert-card__stack--2 {
+  transform: translateX(-50%) rotate(3deg);
+  opacity: 0.45;
+}
+
+.cert-card:hover .cert-card__stack--1,
+.cert-card:focus-within .cert-card__stack--1 {
+  transform: translateX(-50%) rotate(-6deg) translateY(2px);
+}
+
+.cert-card:hover .cert-card__stack--2,
+.cert-card:focus-within .cert-card__stack--2 {
+  transform: translateX(-50%) rotate(6deg) translateY(2px);
+}
+
 .cert-card__badge {
   position: absolute;
   top: 18px;
-  left: -6px;
+  left: 10px;
   z-index: 3;
   background: var(--card-accent);
   color: #fff;
   font-style: italic;
   font-weight: 800;
   font-size: 0.95rem;
-  padding: 6px 14px;
-  border-radius: var(--radius-sm) 0 var(--radius-sm) var(--radius-sm);
+  padding: 8px 14px 16px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 82%, 0 100%);
   box-shadow: 0 8px 16px -8px rgba(20, 21, 26, 0.4);
   transition: filter 0.3s ease;
 }
@@ -221,7 +260,7 @@
 .cert-card__inner {
   position: relative;
   z-index: 1;
-  background: #fff;
+  background: var(--surface);
   border: 1px solid var(--color-border);
   border-radius: calc(var(--radius-lg) - 6px);
   padding: 56px 22px 26px;
@@ -254,7 +293,7 @@
 
 .cert-card__hex-base,
 .cert-card__hex-trace {
-  fill: #fff;
+  fill: var(--surface);
   stroke-width: 2.5;
   stroke-linejoin: round;
 }

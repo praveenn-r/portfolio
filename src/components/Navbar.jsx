@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FiMenu, FiX, FiDownload } from "react-icons/fi";
 import { navLinks, profile } from "../data/portfolioData";
+import ThemeToggle from "./ThemeToggle";
 import "./Navbar.css";
 
 function Navbar() {
@@ -33,6 +34,7 @@ function Navbar() {
         </nav>
 
         <div className="navbar__actions">
+          <ThemeToggle />
           <a href={profile.resumeUrl} className="btn btn-primary navbar__cta">
             <FiDownload /> Download Resume
           </a>

@@ -6,10 +6,10 @@ import { certifications } from "../data/portfolioData";
 import "./Certifications.css";
 
 const icons = {
-  dhee: <FiCode />,
-  mysql: <SiMysql />,
-  python: <FaPython />,
-  aws: <FaAws />,
+  dhee: <FiCode color="#6c4cff" />,
+  mysql: <SiMysql color="#00758F" />,
+  python: <FaPython color="#3776AB" />,
+  aws: <FaAws color="#FF9900" />,
 };
 
 // Hexagon points for a 120x104 viewBox (flat-top hexagon)
@@ -21,6 +21,9 @@ function CertCard({ cert, index }) {
       className="cert-card"
       style={{ "--card-accent": cert.accent }}
     >
+      <span className="cert-card__stack cert-card__stack--1" aria-hidden="true" />
+      <span className="cert-card__stack cert-card__stack--2" aria-hidden="true" />
+
       <span className="cert-card__badge">
         {String(index + 1).padStart(2, "0")}
       </span>

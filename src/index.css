@@ -1,16 +1,33 @@
 :root {
+  /* Semantic theme variables — these are the ones that flip between themes */
+  --bg-primary: #ffffff;
+  --bg-secondary: #faf7ff;
+  --surface: #ffffff;
+  --text-primary: #14151a;
+  --text-secondary: #5c5f6a;
+  --border-color: rgba(20, 20, 40, 0.1);
+  --navbar-bg: rgba(255, 255, 255, 0.9);
+  --hero-bg-start: #fff1e6;
+  --hero-bg-end: #f3edff;
+  --shadow-color: rgba(20, 21, 26, 0.16);
+
+  /* Brand accents — stay consistent across both themes */
   --color-orange: #f97316;
   --color-orange-dark: #ea6a0e;
   --color-purple: #7c5cff;
-  --color-ink: #14151a;
-  --color-body: #5c5f6a;
-  --color-bg: #ffffff;
-  --color-bg-soft: #faf9fb;
-  --color-border: #ececef;
-  --color-hero-bg-start: #fff1e6;
-  --color-hero-bg-end: #f3edff;
   --color-pill-bg: #f1edff;
   --color-success: #22c55e;
+
+  /* Legacy variable names, mapped onto the semantic ones above.
+     Every component already references these — theming happens
+     automatically everywhere they're used. */
+  --color-ink: var(--text-primary);
+  --color-body: var(--text-secondary);
+  --color-bg: var(--bg-primary);
+  --color-bg-soft: var(--bg-secondary);
+  --color-border: var(--border-color);
+  --color-hero-bg-start: var(--hero-bg-start);
+  --color-hero-bg-end: var(--hero-bg-end);
 
   --font-display: "Poppins", "Segoe UI", sans-serif;
   --font-body: "Inter", "Segoe UI", sans-serif;
@@ -24,8 +41,30 @@
   --max-width: 1240px;
 }
 
+[data-theme="dark"] {
+  --bg-primary: #070a17;
+  --bg-secondary: #0d1124;
+  --surface: #11162b;
+  --text-primary: #f8faff;
+  --text-secondary: #a8b0c5;
+  --border-color: rgba(255, 255, 255, 0.1);
+  --navbar-bg: rgba(7, 10, 23, 0.85);
+  --hero-bg-start: #150f2e;
+  --hero-bg-end: #0d1124;
+  --shadow-color: rgba(0, 0, 0, 0.45);
+  --color-pill-bg: rgba(124, 92, 255, 0.18);
+}
+
 * {
   box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  transition-property: background-color, border-color, color;
+  transition-duration: 0.25s;
+  transition-timing-function: ease;
 }
 
 html {
@@ -36,8 +75,9 @@ body {
   margin: 0;
   font-family: var(--font-body);
   color: var(--color-ink);
-  background: linear-gradient(135deg, var(--color-hero-bg-start), var(--color-hero-bg-end));
+  background: var(--color-bg);
   -webkit-font-smoothing: antialiased;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 h1, h2, h3, h4 {
@@ -122,7 +162,7 @@ button {
 }
 
 .btn-outline {
-  background: #fff;
+  background: var(--surface);
   color: var(--color-ink);
   border-color: var(--color-border);
 }

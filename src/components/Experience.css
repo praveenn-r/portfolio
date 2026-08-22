@@ -1,8 +1,11 @@
 .experience {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, var(--color-hero-bg-start), var(--color-hero-bg-end));
-  padding: 68px 0;
+  background: linear-gradient(120deg, #f3edff 0%, var(--color-bg-soft) 50%, #fff6ef 100%);
+}
+
+[data-theme="dark"] .experience {
+  background: linear-gradient(120deg, #150f2e 0%, #0d1124 50%, #11162b 100%);
 }
 
 .experience__section-deco {
@@ -21,12 +24,12 @@
 .experience__panel {
   position: relative;
   z-index: 1;
-  background: #fff;
+  background: var(--surface);
   border-radius: var(--radius-lg);
   box-shadow: 0 24px 50px -30px rgba(20, 21, 26, 0.2);
-  padding: 38px 48px;
+  padding: 56px;
   overflow: hidden;
-  height: 540px;
+  height: 550px;
 }
 
 .experience__deco--dots {
@@ -227,7 +230,7 @@
 .experience__chip--python {
   width: 52px;
   height: 52px;
-  background: #fff;
+  background: var(--surface);
   color: #3776ab;
   font-size: 1.5rem;
   top: 14%;
@@ -294,7 +297,7 @@
   left: 12px;
   width: 36px;
   height: 26px;
-  background: #fff;
+  background: var(--surface);
   border: 1px solid var(--color-border);
   border-radius: 0 0 8px 8px;
 }
@@ -345,7 +348,7 @@
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  background: #fff;
+  background: var(--surface);
   border: 3px solid var(--color-purple);
   z-index: 2;
 }

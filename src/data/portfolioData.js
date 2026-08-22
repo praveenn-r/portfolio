@@ -28,10 +28,9 @@ export const navLinks = [
 ];
 
 export const stats = [
-  { icon: "code", value: "1+", label: "Projects Completed" },
+  { icon: "code", value: "2+", label: "Projects Completed" },
   { icon: "briefcase", value: "0+", label: "Experience" },
   { icon: "cap", value: "8.6", label: "CGPA" },
-  { icon: "trophy", value: "Problem Solver", label: "LeetCode" },
 ];
 
 export const aboutPoints = [
