@@ -7,6 +7,7 @@ import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Certifications from "./components/Certifications";
 import CTA from "./components/CTA";
+import Chatbot from "./components/Chatbot";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Certifications />
         <CTA />
       </main>
+      <Chatbot />
     </>
   );
 }

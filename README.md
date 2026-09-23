@@ -7,10 +7,14 @@ A React + JavaScript (Vite) recreation of the portfolio design, built with plain
 
 ```bash
 npm install
-npm run dev       # start local dev server
+npm run dev       # start the Vite frontend
+npm run server    # in a second terminal, start the Gemini chat API
 npm run build     # production build -> dist/
 npm run preview   # preview the production build
 ```
+
+Copy `.env.example` to `.env` and set `GEMINI_API_KEY` in `.env` before
+starting the chat API. Keep `.env` private; it is excluded from Git.
 
 ## Project structure
 
